@@ -1,0 +1,67 @@
+.cardSlider {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  gap: 20px;
+  margin: auto;
+}
+.link{
+  color: black;
+}
+
+.cardInf {
+  padding-left: 10px;
+}
+
+.AllCard {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  padding: 10px 5px;
+  display: flex;
+  gap: 30px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.cards::-webkit-scrollbar {
+  
+  width: 0.5rem;
+}
+
+.cards::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .cardSlider {
+    position: relative;
+    justify-content: space-between;
+    width: 85%;
+    
+  }
+
+  .cards {
+    justify-content:space-between;
+    width: 100%;
+    overflow: hidden;
+    gap: 10px;
+  }
+  .AllCard{
+    position: absolute;
+    right: 0px;
+  }
+  .cardInf {
+    padding-left: 0px;
+  }
+}

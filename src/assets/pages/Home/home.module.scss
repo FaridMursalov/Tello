@@ -1,0 +1,45 @@
+.advertisings {
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 50px;
+  }
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 10px;
+}
+.ProductsNumber {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+.container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
+.ServicesContainer {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    p {
+      width: 80%;
+    }
+  }
+  padding: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

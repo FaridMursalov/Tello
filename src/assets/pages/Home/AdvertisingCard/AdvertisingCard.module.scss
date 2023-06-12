@@ -1,0 +1,51 @@
+.Card {
+    @media screen and (min-width:768px) {
+        width: 45%;
+    }
+    border-radius: 8px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 25px 5px;
+}
+.Info{
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    display: flex;
+    // gap: 50px;
+}
+.Img{
+    @media screen and (min-width:768px) {
+        width: 40%;
+        
+    }
+    width: 50%;
+    
+    order: 1;
+}
+.Content{
+    align-items: flex-start;
+        gap: 10px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.CardTitle{
+font-size: 16px;
+font-weight: 600;
+}
+.button{
+    width: 1%;
+}
+.CardText{
+    color: gray;
+    font-size: 14px;
+    padding: 0;
+        text-align: start;
+        // padding: 7px 0;
+    
+    font-weight: normal;
+}

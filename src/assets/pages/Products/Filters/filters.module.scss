@@ -1,0 +1,102 @@
+.filters {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #edf1f7;
+    margin-bottom: 35px;
+}
+.sort {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.border {
+    margin-left: 15px;
+    border: 01px solid #edf1f7;
+    height: 30px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.FilterHeader {
+    display: flex;
+    padding: 23px 10px;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+}
+.sortBarContainer {
+    @media screen and (min-width: 768px) {
+        display: none;
+        
+        
+    }
+    position: fixed;
+
+    transform: translate(-100%, -239px);
+
+    transition: 0.5s;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.activeList {
+    position: fixed;
+    overflow: scroll;
+    transform: translateY(-240px);
+    transition: 0.5s;
+    height: 100vh;
+}
+.sortBar {
+    @media screen and (min-width: 768px) {
+    display: none;
+    
+    
+}
+    padding: 20px 0px;
+
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.button {
+    margin: 20px 0px;
+    text-align: center;
+    width: 85%;
+    background: #2dd06e;
+    border-radius: 8px;
+    border: 0;
+    font-size: 16px;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    
+}
+.selectMobile{ option{
+    font-size: 12px;
+}
+
+
+    border: 1px solid #bdbdbd;
+    outline: 0px;
+    border: 0px;
+    
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 16px;}
+  

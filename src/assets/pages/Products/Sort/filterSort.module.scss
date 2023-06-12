@@ -1,0 +1,86 @@
+.sortContainer{
+    width: 90%;
+    margin: auto;
+    // margin-right: 50px;
+}
+.Sort{justify-content: space-between;
+ 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+border-bottom:1px solid #BDBDBD;
+}
+
+.close{
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+.sortList{
+    
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    
+    li{padding: 10px;
+        display: flex;
+        
+        gap: 20px;
+    }
+}
+
+
+
+
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #00D68F29;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    border: 1px solid #2DD06E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:after {
+    content: url("../../../icons/🎨\ Icon\ Color.svg");
+    display: none;
+}
+
+input[type="checkbox"]:hover {
+    background-color: #acb9b2;
+    // transition: 850ms;
+}
+
+input[type="checkbox"]:checked {
+  
+    background-color: #2DD06E;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+    padding-bottom: 3px;
+    
+}
+.PriceForm{
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+ .border{
+    width: 35px;
+    height: 1px;
+    border: 1px solid #E0E0E0;
+
+ }

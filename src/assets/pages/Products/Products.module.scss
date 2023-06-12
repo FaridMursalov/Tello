@@ -1,0 +1,69 @@
+.products {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        gap: 1px;
+        justify-content: center;
+    }
+}
+.cardContainer {
+    @media screen and (min-width: 768px) {
+        padding: 50px 0px;
+        width: 70%;
+    }
+}
+.card {
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+        width: 100%;
+        //   justify-content: flex-start;
+    }
+    justify-content: center;
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.d {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.select {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectDesktop {
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    border: 1px solid #bdbdbd;
+    outline: 0px;
+}
+.product {
+    @media screen and (min-width: 768px) {
+        width: 80%;
+    }
+    width: 97%;
+    margin: auto;
+}
+
+.title {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+    padding: 0px 6px;
+}

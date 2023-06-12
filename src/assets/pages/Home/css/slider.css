@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+  .slick-slider h3 {
+    height: 76vh;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: #7BE9C5;
+}
+
+@media screen and (min-width: 768px) {
+  .slick-slider {
+    margin-bottom: 150px;
+  }
+}

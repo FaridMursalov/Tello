@@ -1,0 +1,215 @@
+.headerContainer {
+  padding: 8px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .headerContainer {
+    padding: 15px 40px;
+    padding-bottom: 8px;
+  }
+}
+
+.searchContainer {
+  padding: 5px 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2ce59b;
+}
+@media screen and (min-width: 768px) {
+  .searchContainer {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburgerIcon {
+    display: none;
+  }
+}
+
+.leftLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.rightLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding-right: 5px;
+}
+@media screen and (min-width: 768px) {
+  .rightLogos {
+    gap: 25px;
+  }
+}
+
+.sebet {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .sebet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    gap: 20px;
+  }
+}
+
+.count {
+  -webkit-transform: translate(-10px);
+          transform: translate(-10px);
+  bottom: 10px;
+  position: absolute;
+  text-align: center;
+  padding: 1.2px 6px;
+  font-size: 13px;
+  background-color: #2dd06e;
+  color: white;
+  border-radius: 100%;
+}
+@media screen and (min-width: 768px) {
+  .count {
+    position: static;
+    padding: 1.5px 6px;
+  }
+}
+
+.navbar {
+  z-index: 1;
+  width: 100%;
+  -webkit-transform: translate(-100%, -109px);
+          transform: translate(-100%, -109px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  list-style: none;
+  gap: 20px;
+  font-size: 25px;
+  background-color: white;
+  height: 100vh;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: 0s;
+    transition: 0s;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
+    width: auto;
+    background-color: none;
+    font-size: 14px;
+    padding-left: 20px;
+    width: 100%;
+    color: #4f4f4f;
+    position: static;
+    gap: 0px;
+  }
+}
+
+.active-navBar {
+  -webkit-transform: translateY(-109px);
+          transform: translateY(-109px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hamburgerHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+@media screen and (min-width: 768px) {
+  .hamburgerHeader {
+    display: none;
+  }
+}
+
+.hamburgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.searchNavIcon {
+  color: #1d2123;
+  width: 25px;
+}
+
+.navList {
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .navList img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navList:hover {
+    cursor: pointer;
+    color: #2dd06e;
+  }
+}
+
+.rightIcons {
+  rotate: 0deg;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.rightIcon {
+  rotate: 90deg;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}

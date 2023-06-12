@@ -1,0 +1,69 @@
+.page {
+    @media screen and (min-width:768px)  {
+        border: 0;
+        padding: 42px 0;
+    }
+    padding: 70px 0;
+
+    border-bottom: 1px solid #f2f2f2;
+
+    ul {
+        a {
+            color: black;
+        }
+        li {
+            @media screen and (min-width:768px)   {
+                padding: 7px 14px;
+                border: 1px solid white;
+
+                &:hover:not(.before, .next) {
+                    border: 1px solid green;
+
+                    border-radius: 10px;
+                }
+                &:focus{
+                    a {
+                        color: white;
+                    }
+        
+                    padding: 7px 14px;
+                    background-color: green;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .pagenum {
+            padding: 7px 9px;
+        }
+        @media screen and (min-width:768px) {
+            font-size: 20px;
+        }
+          @media screen and (min-width:768px)  {
+        border: 0;
+        padding: 42px 0;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+        font-size: 25px;
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            
+        }
+        padding: 0;
+        padding: 0 15px;
+
+        .activePage {
+            a {
+                color: white;
+            }
+
+            padding: 7px 12px;
+            background-color: #2DD06E;
+            border-radius: 10px;
+        }
+    }
+}

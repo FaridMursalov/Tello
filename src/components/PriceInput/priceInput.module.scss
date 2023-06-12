@@ -1,0 +1,29 @@
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;}
+
+  input{
+    // text-align: center;
+    width: 50%;
+    // padding: 20px;
+    font-size: 16px;
+    background: #FFFFFF;
+/* Gray 5 */
+border: 0px;
+outline: 0;
+  }
+  .price{
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    display: flex;
+    padding: 15px 5px;
+    width: 130px;
+    background: #FFFFFF;
+    /* Gray 5 */
+    
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+
+  }

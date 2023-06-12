@@ -1,0 +1,108 @@
+.SliderCard {
+  background-image: url("../../assets/imgs/Rectangle 156.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0px;
+}
+@media screen and (min-width: 768px) {
+  .SliderCard {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    padding: 25px 0px;
+  }
+}
+
+.SliderInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0px;
+  gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .SliderInfo {
+    background-size: cover;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.SliderImg {
+  width: 70%;
+}
+@media screen and (min-width: 768px) {
+  .SliderImg {
+    width: 30%;
+    height: 540px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.SliderContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+}
+@media screen and (min-width: 768px) {
+  .SliderContent {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+.CardTitle {
+  font-size: 30px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .CardTitle {
+    font-size: 50px;
+  }
+}
+
+.CardText {
+  padding: 7px 19px;
+  text-align: center;
+  color: #4f4f4f;
+  font-weight: normal;
+}
+@media screen and (min-width: 768px) {
+  .CardText {
+    padding: 0;
+    text-align: start;
+    padding: 7px 0;
+    width: 70%;
+  }
+}

@@ -1,0 +1,102 @@
+.footer{
+    background-color: 
+    #303030;
+    color: white;
+}
+
+.container{
+    @media screen and (min-width:768px) {
+        text-align: start;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        padding: 60px 70px;
+        padding-bottom: 80px;
+    }
+    padding: 30px;
+    text-align: center;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-bottom:1px solid white;
+
+}
+
+.footerList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact{text-align: start;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.SocialBar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.LogoSocial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+a{
+    color: white;
+    &:hover{
+        color: #2DD06E;
+    }
+}
+.rules{
+    @media screen and (min-width:768px) {
+        position: absolute;
+        right: 30px;
+        transform: translateY(286px);
+        
+    }
+    
+    
+    text-align: start;
+    display: flex;
+    gap: 55px;
+
+}
+
+.ContactList{
+    gap: 30px;
+}
+.MenuContainer{
+display: flex;
+flex-direction: column;
+gap: 30px;
+
+
+}
+.helpContainer{
+display: flex;
+flex-direction: column;
+gap: 30px;
+
+
+}
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.footerEnd{
+    @media screen and (min-width:768px) {
+        justify-content: flex-start;
+        padding-left: 80px;
+        
+    }
+    padding: 20px 0px;
+display: flex;
+justify-content:center;
+gap: 15px;
+
+}
