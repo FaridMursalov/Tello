@@ -5,7 +5,7 @@ import Sort from "../Sort";
 import closeIcon from "../../../icons/closeSearch.svg";
 import { useState } from "react";
 
-const Filters = () => {
+const Filters = ({sortBY, sortByDirection}) => {
   const [activeFilter, setActiveFilter] = useState(false);
   if (activeFilter) {
     document.body.style.overflow = "hidden";
@@ -17,12 +17,11 @@ const Filters = () => {
       <div className={styles.filters}>
         <div className={styles.sort}>
           <img src={SortIcon} alt="" />
-          <select name="" id="" className={styles.selectMobile}>
-            <option className={styles.optionMobile} value="Sıralama">Sıralama</option>
-            <option className={styles.optionMobile} value="Ən yenilər">Ən yenilər</option>
-            <option className={styles.optionMobile} value="Ən köhnə">Köhnələr</option>
-            <option className={styles.optionMobile} value="Ən baha">Ən Bahalı</option>
-            <option className={styles.optionMobile} value="Ən ucuz">Ən ucuz</option>
+          <select name="" id="" className={styles.selectMobile} value={sortBY} onChange={sortByDirection} >
+            <option className={styles.optionMobile} value="sort_order">Sıralama</option>
+            <option className={styles.optionMobile} value="updated_at">Ən yenilər</option>
+            <option className={styles.optionMobile} value="name">Ada Görə</option>
+            <option className={styles.optionMobile} value="price">Qiymətə Görə</option>
           </select>
         </div>
         <div className={styles.border}></div>

@@ -8,9 +8,9 @@ const Card = ({ product }) => {
       <div className={styles.productInf}>
         <span className={styles.productName}>{product?.name}</span>
         <div className={styles.prices}>
-          <span className={styles.oldPrice}> </span>{" "}
-          <span className={styles.sale}> </span>{" "}
-          <span className={styles.price}> {product?.price?.formatted}₼</span>
+          {/* <span className={styles.oldPrice}> </span>{" "}
+          <span className={styles.sale}> </span>{" "} */}
+          <span className={styles.price}> {product?.price?.formatted.toString().split(",")} ₼</span>
         </div>
       </div>
     </div>

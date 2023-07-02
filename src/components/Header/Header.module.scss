@@ -1,4 +1,10 @@
 .headerContainer {
+    img:hover{
+        cursor: pointer;
+        
+
+    }
+
     @media screen and (min-width: 768px) {
         padding: 15px 40px;
         padding-bottom: 8px;
@@ -14,18 +20,15 @@
     @media screen and (min-width: 768px) {
     }
     padding: 5px 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     border-bottom: 1px solid #2ce59b;
-    @media screen and (min-width: 768px) {
-        padding-bottom: 10px;
-    }
+    
 }
 .hamburgerIcon {
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
-
 .leftLogos {
     display: flex;
     align-items: center;
@@ -53,23 +56,23 @@
         position: static;
         padding: 1.5px 6px;
     }
-
+    
     transform: translate(-10px);
     bottom: 10px;
-
+    
     position: absolute;
     text-align: center;
-
+    
     padding: 1.2px 6px;
     font-size: 13px;
-
+    
     background-color: #2dd06e;
     color: white;
     border-radius: 100%;
 }
 
 .navbar {
-    z-index: 1;
+    z-index: 2;
     @media screen and (min-width: 768px) {
         a {
             color: #4f4f4f;
@@ -77,7 +80,7 @@
                 color: #2dd06e;
             }
         }
-
+        
         display: flex;
         transform: translateY(0px);
         transition: 0s;
@@ -89,12 +92,12 @@
         padding-left: 20px;
         width: 100%;
         color: #4f4f4f;
-        position: static;
+        position: relative;
         gap: 0px;
     }
     width: 100%;
-    transform: translate(-100%, -113px);
-
+    transform: translate(-100%, -133px);
+    
     list-style: none;
     gap: 20px;
     font-size: 20px;
@@ -106,14 +109,15 @@
     transition: 0.5s;
     a {
         color: black;
-       
+        
     }
 }
 .active-navBar {
+    overflow: auto;
     position: fixed;
-
-    transform: translateY(-113px);
-    height: 100vh;
+    z-index: 2;
+    transform: translateY(-133px);
+    min-height: 100vh;
     transition: 0.5s;
     display: flex;
 }
@@ -121,10 +125,10 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
-
+    
     display: flex;
     justify-content: space-between;
-
+    
     padding: 20px;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -137,17 +141,19 @@
     color: #1d2123;
     width: 25px;
 }
-
 .navList {
     @media screen and (min-width: 768px) {
         img {
             display: none;
         }
+        padding-bottom: 10px;
+        position:static;
     }
+    position: relative;
     padding: 5px 20px;
     display: flex;
     align-items: center;
-
+    
     justify-content: space-between;
 }
 
@@ -157,14 +163,89 @@
         color: #2dd06e;
     }
 }
+.categoriesWindow{
+    @media screen and (max-width : 768px ) {
+        display: block;
+        transform: translateY(0);
+        position: relative;
+        background-color: white;
+        // top: 0px;
+font-size: 17px;
+        z-index: 0;
+display: flex;
+
+height: auto;
+flex-direction: column;
+padding: 30px 20px;
+gap: 20px;
+        
+
+        width: 100%;
+        
+    }
+    position: absolute;
+    border-bottom: 1px solid grey;
+    top: 0px;
+    height: 300px;
+    display: none;
+    padding: 30px;
+    transform: translateY(34px);
+    width: 100vw;
+    right: 0px;
+    z-index: 2;
+    gap: 20px;
+    color: #1d2123;
+    display: none;
+    background-color: white;
+    
+}
+
+.display_none{
+    @media screen and (min-width: 768) {
+        display: block;
+        
+    }
+    
+    display: none;
+}
+
+.active-parentCategory{
+
+@media screen and (max-width: 768px) 
+{
+    
+}
+
+}
+
+.navList:hover + .categoriesWindow{
+    @media screen  and (min-width: 768px) {
+        
+        display: flex;
+    }
+    
+}
+.categoriesWindow:hover{
+    @media screen  and (min-width: 768px) {
+        
+        display: flex;
+    }
+    
+}
 
 .rightIcons {
-    rotate: 0deg;
-    transition: 0.5s;
+    img{
+
+        rotate: 0deg;
+        transition: 0.5s;
+    }
 }
 .rightIcon {
-    rotate: 90deg;
-    transition: 0.5s;
+    img{
+
+        rotate: 90deg;
+        transition: 0.5s;
+    }
 }
 .login {
     @media screen and (min-width: 768px) {

@@ -1,9 +1,10 @@
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
+.priceInput::-webkit-inner-spin-button,
+.priceInput
+::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;}
 
-  input{
+  .priceInput{
     // text-align: center;
     width: 50%;
     // padding: 20px;

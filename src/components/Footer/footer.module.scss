@@ -1,11 +1,10 @@
-.footer{
-    background-color: 
-    #303030;
+.footer {
+    background-color: #303030;
     color: white;
 }
 
-.container{
-    @media screen and (min-width:768px) {
+.container {
+    @media screen and (min-width: 768px) {
         text-align: start;
         flex-direction: row;
         align-items: start;
@@ -15,88 +14,78 @@
     }
     padding: 30px;
     text-align: center;
-    display:  flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    border-bottom:1px solid white;
-
+    border-bottom: 1px solid white;
 }
 
-.footerList{
+.footerList {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.contact{text-align: start;
+.contact {
+    text-align: start;
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.SocialBar{
+.SocialBar {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.LogoSocial{
+.LogoSocial {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-a{
+a {
     color: white;
-    &:hover{
-        color: #2DD06E;
+    &:hover {
+        color: #2dd06e;
     }
 }
-.rules{
-    @media screen and (min-width:768px) {
+.rules {
+    @media screen and (min-width: 768px) {
         position: absolute;
         right: 30px;
         transform: translateY(286px);
-        
     }
-    
-    
+
     text-align: start;
     display: flex;
     gap: 55px;
-
 }
 
-.ContactList{
+.ContactList {
     gap: 30px;
 }
-.MenuContainer{
-display: flex;
-flex-direction: column;
-gap: 30px;
-
-
+.MenuContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-.helpContainer{
-display: flex;
-flex-direction: column;
-gap: 30px;
-
-
+.helpContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-.ContactContainer{
+.ContactContainer {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-
-.footerEnd{
-    @media screen and (min-width:768px) {
+.footerEnd {
+    @media screen and (min-width: 768px) {
         justify-content: flex-start;
         padding-left: 80px;
-        
     }
     padding: 20px 0px;
-display: flex;
-justify-content:center;
-gap: 15px;
-
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }

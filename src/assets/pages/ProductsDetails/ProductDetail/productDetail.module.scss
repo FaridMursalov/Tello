@@ -1,0 +1,84 @@
+.colors {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    @media screen and  (min-width: 768px) {
+        
+        border-top:  0.5px solid gainsboro;
+    }
+    gap: 20px;
+}
+.memory {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 20px;
+    @media screen and  (min-width: 768px) {
+        
+        border-bottom:  0.5px solid gainsboro;
+    }
+
+}
+.ProductCount {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.count {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 5px;
+    text-align: center;
+    width: 20px;
+}
+.productName {font-size: 20px;
+    padding: 20px 15px;
+    color: #333333;
+    font-weight: 600;
+    @media screen and  (min-width: 768px) {
+padding: 0px 15px;        
+    }
+    
+}
+.priceContainer {
+    @media screen and  (min-width: 768px) {
+        border: 0px;
+        
+    }
+    padding: 0 15px;
+    border-top:  0.5px solid gainsboro;
+    border-bottom: 0.5px solid gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DefaultPrice {
+    padding: 20px 0;
+    color: #2dd06e;
+    font-size: 20px;
+    font-weight: 600;
+    .manatIcon{
+        font-size: 30px;
+        font-weight: 100;
+    }
+}
+.variants{
+    
+    position: relative;
+    padding: 25px 15px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.basket{
+    @media screen and (min-width: 768px) {
+        transform: translatey(22rem) translateX(-38rem);
+        
+    }
+}
+.countTitle{
+    @media screen and (min-width: 768px) {
+    display: none;
+        
+    }
+}

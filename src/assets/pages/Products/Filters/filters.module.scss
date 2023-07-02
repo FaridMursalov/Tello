@@ -1,4 +1,5 @@
 .filters {
+    
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -12,18 +13,22 @@
     margin-bottom: 35px;
 }
 .sort {
-    padding-left: 10px;
+    width: 32%;
+    // padding-left: 10px;
+
     display: flex;
     align-items: center;
     gap: 8px;
 }
 .border {
-    margin-left: 15px;
-    border: 01px solid #edf1f7;
+    // margin-left: 15px;
+
+    border: 1px solid #edf1f7;
     height: 30px;
 }
 
 .filter {
+    width: 32%;
     display: flex;
     align-items: center;
     gap: 8px;

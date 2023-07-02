@@ -8,59 +8,39 @@ import Search from "../Search";
 import close from "../../assets/icons/close.svg";
 import search from "../../assets/icons/searchHamburger.svg";
 import right from "../../assets/icons/right.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react"; // useEffect'i burada ekledim
 import SignButton from "../SignButton";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "../../api/index";
-import { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [active, setActive] = useState(false);
   const [activeList, setActiveList] = useState(false);
+  const [ activeListIndex, setActiveIndexList] = useState(null)
   const [categoryName, setCategoryName] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
 
-  // console.log('local', localCategory);
+  const { value } = useSelector((state) => state.counterReducer);
 
   useEffect(() => {
     const getCategoryName = async () => {
-      const localCategory = JSON.parse(localStorage.getItem("categoryName")) || [];
-
-      setCategoryName(localCategory);
-
       const response = await axios.get("https://api.chec.io/v1/categories");
       const data = response.data.data;
-
       setCategoryName(data);
-      console.log(categoryName, "second");
     };
 
     getCategoryName();
   }, []);
 
-  console.log(categoryName, "Catego");
-  useEffect(() => {
-
-    if (
-          categoryName.length !== 0
-    ) {
-      localStorage.setItem(
-        "categoryName",
-        JSON.stringify(categoryName.map((category) => category.slug)),
-        []
-      );
-    }
-  }, [categoryName]);
-
-  console.log(categoryName);
-
   const clickHamburger = () => {
     setActive(!active);
   };
-  const getActiveList = () => {
-    setActiveList(!activeList);
+
+  const getActiveList = (index) => {
+    // setActiveList(!activeList);
+    setActiveIndexList(activeListIndex === index? null : index)
   };
-  console.log(activeList);
+
 
   if (active) {
     document.body.style.overflow = "hidden";
@@ -83,16 +63,20 @@ const Header = () => {
           </Link>
         </div>
         <div className={styles.rightLogos}>
-          <img src={people} alt="" />
-          <img src={heart} alt="" />
-          <div className={styles.sebet}>
-            <img src={sebet} alt="" /> <span className={styles.count}>0</span>
-          </div>
+          <Link to={"/Login"}><img src={people} alt="" /></Link>
+          <Link><img src={heart} alt="" /></Link>
+          <Link to={"/basket"}>
+            <div className={styles.sebet}>
+              <img src={sebet} alt="" />{" "}
+              <span className={styles.count}>{value}</span>
+            </div>
+          </Link>
         </div>
       </div>
 
       <div className={styles.searchContainer}>
         <Search />
+
         <ul
           className={`${active ? styles["active-navBar"] : styles["navbar"]} ${
             styles.navbar
@@ -105,22 +89,44 @@ const Header = () => {
             </div>
             <img className={styles.searchNavIcon} src={search} alt="" />
           </div>
-          {categoryName.map((cat) => (
-            <li className={styles.navList} key={cat.id}>
-              <Link
-                to={`/products/${cat? cat.slug : ''}/1`} 
-                onClick={() => setActive(false)}
-              >
-                {cat.name}
-              </Link>
-              <img
-                onClick={getActiveList}
-                style={{ transform: activeList ? "rotate(90deg)" : "none" }}
-                src={right}
-                alt=""
-              />
-            </li>
-          ))}
+
+          {
+            categoryName.map((cat,index) => (
+              <div key={cat?.id}>
+                <li className={styles.navList}>
+                  <Link
+                    to={`/products/${cat ? cat.slug : ""}/1`}
+                    onClick={() => setActive(false)}
+                  >
+                    {cat?.name}
+                  </Link>
+                  {cat.children.length > 0 &&  (
+                    <span
+                      onClick={()=> getActiveList(index)}
+                      className={
+                        activeListIndex === index? styles.rightIcon : styles.rightIcons
+                      }
+                    >
+                      <img src={right} alt="" />
+                    </span>
+                  )}
+                </li>
+                {cat.children.length > 0 && (
+                  <div className={` ${ activeListIndex=== index?  styles.categoriesWindow : styles.display_none} ${  styles.categoriesWindow }` }>
+                    {cat?.children?.map((subCategory) => (
+                      <Link
+                      key={subCategory.slug}
+                      onClick={()=> setActive(false)}
+                        to={`/products/${subCategory ? subCategory?.slug : ""}/1`}
+                      >
+                        {subCategory?.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          )}
 
           <div className={styles.login}>
             <SignButton

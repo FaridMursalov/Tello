@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.sortContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.Sort {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.close {
+  display: none;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sortList {
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sortList li {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(0, 214, 143, 0.1607843137);
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #2DD06E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input[type=checkbox]:after {
+  content: url("../../../icons/🎨 Icon Color.svg");
+  display: none;
+}
+
+input[type=checkbox]:hover {
+  background-color: #acb9b2;
+}
+
+input[type=checkbox]:checked {
+  background-color: #2DD06E;
+}
+
+input[type=checkbox]:checked:after {
+  display: block;
+  padding-bottom: 3px;
+}
+
+.PriceForm {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.border {
+  width: 35px;
+  height: 1px;
+  border: 1px solid #E0E0E0;
+}

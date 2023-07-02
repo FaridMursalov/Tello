@@ -1,0 +1,163 @@
+.loginContainer{
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-around;
+        
+        // align-items: center;
+        // padding-left: 300px;
+    }
+    a{
+        &:hover{
+            color: #36F;
+            text-decoration: underline;
+        }
+    }
+    padding: 50px 0;
+}
+
+.loginSideImg{
+@media screen and (min-width: 768px) {
+
+    display: flex;// flex-grow: 1;
+    // width: 50%;
+    padding-top: 40px;
+
+    // justify-content: flex-end;
+    // width: 100%;
+background-color: white;
+    
+}
+    display: none;
+}
+.img1{ 
+    position: relative;
+    z-index: 1;
+ 
+    // background-color: red;
+}
+.img2{
+background-color: white;
+   position: relative;
+   transform: translate(260px, -300px);
+}
+.Login{
+    // padding: 70px 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+gap: 25px;
+h2{color: #4F4F4F;
+
+}
+
+.and{
+    color: #BDBDBD;
+}
+}
+.LoginSocial{ 
+    justify-content: center;
+    width: 330px;
+    color: #4F4F4F;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.socialSign{
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.SignFb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+background: #4267B2;
+}
+.SignGoogle{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+background: #DB4437;
+}
+
+.form{
+    @media screen and (min-width: 768px) {
+        
+// 
+        
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.inputContainer{
+    width: 330px;
+    margin: auto;
+    padding: 10px 0;
+    
+    
+}
+.updatePassword{
+    padding-top: 5px;
+    font-size: 15px;
+    color: #36F;
+    font-weight: 600;
+    display: flex;
+justify-content: end;
+}
+.CreateAccount{
+    @media screen and (min-width:768px) {
+        position: relative;
+        right: 0px;
+        margin: 0;
+
+        transform: translate( 52vw, -340px);
+        font-size: 14px;
+    }
+    color: #4F4F4F;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+.CreateLink{
+    color:#36F;
+    font-weight: 600;
+}
+.signButton{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.checkbox{
+    justify-content: center;
+    transform: translateX(-45px);
+    display: flex;
+    gap: 5px;
+    .inputCheckbox{
+        appearance: none;
+        height: 20px;
+        width: 20px;
+        background-color: white;
+
+        border-radius: 7px;
+        cursor: pointer;
+        border: 1px solid #E0E0E0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a{
+        color: #2D9CDB;
+    }
+}

@@ -1,87 +1,169 @@
 .search::-webkit-search-cancel-button {
     display: none;
-  }
-
-.searchContainer{padding: 5px 0px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #2CE59B;
-    @media screen and (min-width:768px) {
-       padding-bottom: 10px;
-     }
-     
-    
-    
 }
-.searchForm{
-    @media screen and (min-width:768px) {
-       width: 40%;
-       position: relative;
-       transform: translateY(-55px);
-       background: #F2F2F2;
 
-
-border: 1px solid #E0E0E0;
+.searchContainer {
+    padding: 5px 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2ce59b;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 10px;
     }
-    
+}
+.searchForm {
+    @media screen and (min-width: 768px) {
+        // position: relative;
+        width: 40%;
+        position: relative;
+        z-index: 4;
+        
+        transform: translateY(-55px);
+        background: #f2f2f2;
+
+        border: 1px solid #e0e0e0;
+    }
+    position: relative;
+
     width: 100%;
     margin: auto;
-    background-color: #F7F9FC;;
+    background-color: #f7f9fc;
     padding-left: 15px;
-    border: 1px solid #E4E9F2;
+    border: 1px solid #e4e9f2;
     border-radius: 8px;
     height: 40px;
     display: flex;
     align-items: center;
     gap: 20px;
-
 }
 
-
-.searchIcon{
-width: 17px;
+.searchIcon {
+    width: 17px;
 }
 
-.search{
-    @media screen and (min-width:768px) {
-        background: #F2F2F2;
-        
-        
+.search {
+    @media screen and (min-width: 768px) {
+        background: #f2f2f2;
     }
-    
-    background: #F7F9FC;
+
+    background: #f7f9fc;
     width: 100%;
     height: 90%;
     border: 0px;
     outline: 0;
     border-radius: 8px;
-    
 }
-.c{
-     @media screen and (min-width:768px) {
+.SearchList {
+    @media screen and (min-width: 768px) {
+        background-color: white;
+        top: 0px;
+        // bottom: 0px;
+        width: 40%;
+        max-height: 350px;
+        overflow: auto;
+        overflow: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        margin: auto;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border: 1px solid gainsboro;
+        border-top: 0px;
+        transform: translate(75%,-21px);
+        
+    }
+    a{
+        color: black;
+    }
+    position: absolute;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100vw;
+    top: 18px;
+    
+    left: 0px;
+    // z-index: 1;
+    // width: 36%
+    
+    // border: 1px solid gainsboro;
+    // border-top: 0px;
+    // border-bottom-right-radius: 8px;
+    // border-bottom-left-radius: 8px;
+    // padding: 20px 10px;
+    // height: 50px;
+    
+    z-index: 3;
+    background-color:white;
+    transform: translate(0%, 115px );
+}
+.Clear{
+    cursor: pointer;
+    color: #8F9BB3;
+}
+.searchProduct{
+    display: flex;
+    gap: 20px;
+    // max-width: 200px;
+    // overflow: scroll;
+    img{
+        width: 70px;
+    }
+}
+.endSearch{
+    color: #2E3A59;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchLoader{
+    svg{
+        transform: rotate(0);
+    }
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.verySearch{
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    color: #2E3A59;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.closeInput {
+    display: none;
+}
+
+.c {
+    // position: relative;
+    @media screen and (min-width: 768px) {
+        position: relative;
         height: 10px;
-    
-}
+        padding: 0;
+    }
     width: 90%;
     margin: auto;
     display: flex;
+    padding: 0 15px;
+    padding-bottom:  20px;
     gap: 20px;
     // padding: 0px 15px;
 }
 
-.closeSearch{
-    @media screen and (min-width: 768px) {
-       display: none;
-    }
-    display: none;
-
-}
-
-.activeSearch{
+.closeSearch {
     @media screen and (min-width: 768px) {
         display: none;
-     }
-
-display: block;
+    }
+    display: none;
 }
- 
 
+.activeSearch {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    display: block;
+}

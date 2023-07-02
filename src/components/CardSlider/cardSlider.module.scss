@@ -17,8 +17,10 @@
 .AllCard {
   display: flex;
   justify-content: center;
+ 
 }
 
+.center{margin: auto;}
 .cards {
   padding: 10px 5px;
   display: flex;
@@ -26,6 +28,26 @@
   overflow: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  a{
+    @media screen and (min-width: 768px) {
+      width: 30%;
+      
+    }
+    color: black;
+    width: 180px;
+  }
+  div{
+    display: flex;
+    svg{
+      @media screen and (min-width: 768px) {
+        width: 100%;
+        height: 100%;
+      
+      }
+      width: 200px;
+      height: 200px;
+    }
+  }
 }
 
 .cards::-webkit-scrollbar {

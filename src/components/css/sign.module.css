@@ -1,0 +1,19 @@
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  padding: 15px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid greenyellow;
+  border-radius: 8px;
+  color: greenyellow;
+}

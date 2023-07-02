@@ -2,11 +2,12 @@
 
   @font-face {
     font-family: myFirstFont;
-    src: url(./assets/fonts/euclid-circular-a-cufonfonts/Medium.ttf)
+    src: url(./assets/fonts/euclid-circular-a-cufonfonts/Regular.ttf)
   }
 *{
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
     font-family: myFirstFont;
     list-style: none;

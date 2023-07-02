@@ -1,4 +1,5 @@
 .cardSlider {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +10,10 @@
   padding-left: 0;
   gap: 20px;
   margin: auto;
+}
+
+.link {
+  color: black;
 }
 
 .cardInf {
@@ -34,6 +39,15 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+.cards a {
+  color: black;
+  width: 180px;
+}
+@media screen and (min-width: 768px) {
+  .cards a {
+    width: 30%;
+  }
+}
 
 .cards::-webkit-scrollbar {
   width: 0.5rem;
@@ -53,7 +67,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 90%;
+    width: 85%;
   }
   .cards {
     -webkit-box-pack: justify;

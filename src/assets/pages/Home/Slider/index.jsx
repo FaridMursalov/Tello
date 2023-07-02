@@ -51,10 +51,11 @@ img: iphone_14
       
     };
     return (
-      <div> 
+      <div className="my_slider"> 
        
+
         <Slider {...settings}>
-          { this.data.map((slider)=>(<div key={slider.id}>
+          { this.data.map((slider)=>(<div key={slider.key}>
             <h3><SliderCard  campaign={slider.campaign} title={slider.title} image={slider.img} description={slider.description}/></h3>
           </div>))
           

@@ -52,7 +52,7 @@
 }
 @media screen and (min-width: 768px) {
   .SliderImg {
-    width: 30%;
+    width: 450px;
     height: 540px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

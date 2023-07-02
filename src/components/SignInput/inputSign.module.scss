@@ -1,0 +1,57 @@
+
+
+.SignInputContainer{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.SignInput{
+    cursor: pointer;
+    border: 1px solid #F2F2F2;
+    &:hover{
+        border: 1px solid #828282;
+    }
+    display: flex;
+    align-items: center;
+background-color: #F2F2F2;
+    border-radius: 8px;
+    // padding: 0 20px;
+height: 50px;
+}
+.label{color: #4F4F4F;}
+.input{
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    // padding-right: 10px;
+    background-color: #F2F2F2;
+    outline: 0;
+border: 0;
+}
+.inputIcon{padding: 0 20px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    // background-color: red;
+    align-items: center;
+    width: 14% ;
+    cursor: pointer;
+}
+.inputImg{
+    width: 28px;
+}
+.iconss{
+    @media screen and (min-width: 768px) {
+        margin-right: 0;
+        
+    }
+    margin-right: 1px;
+    margin-top: 2px;
+    cursor: pointer;
+    font-weight: 600;
+   color:  #828282;
+}

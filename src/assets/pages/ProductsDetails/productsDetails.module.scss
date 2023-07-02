@@ -1,0 +1,20 @@
+.ProductDetails{
+    @media screen and (min-width: 768px) {
+     flex-direction: row;   
+     padding: 20px 90px;
+     gap: 40px;
+     .DetailsContainer{
+      flex-grow: 1;
+     }
+    }
+   display: flex;
+
+   padding: 10px 0px;
+   flex-direction: column;
+}
+.HashLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}

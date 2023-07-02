@@ -1,0 +1,118 @@
+@media screen and (min-width: 768px) {
+  .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 1px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cardContainer {
+    padding: 50px 0px;
+    width: 70%;
+  }
+}
+
+.card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    gap: 30px;
+    width: 100%;
+  }
+}
+.card a {
+  width: 180px;
+  color: black;
+}
+@media screen and (min-width: 768px) {
+  .card a {
+    width: 30%;
+    color: black;
+  }
+}
+
+.d {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.select {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selectDesktop {
+  padding: 10px;
+  border-radius: 8px;
+  width: 150px;
+  border: 1px solid #bdbdbd;
+  outline: 0px;
+}
+@media screen and (max-width: 768px) {
+  .selectDesktop {
+    display: none;
+  }
+}
+
+.product {
+  width: 97%;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .product {
+    width: 80%;
+  }
+}
+
+.title {
+  padding: 0px 6px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 15px;
+  }
+}

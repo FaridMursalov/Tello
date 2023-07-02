@@ -12,12 +12,14 @@
             color: black;
         }
         li {
+            cursor: pointer;
             @media screen and (min-width:768px)   {
-                padding: 7px 14px;
+                padding: 7px 12px;
                 border: 1px solid white;
 
                 &:hover:not(.before, .next) {
                     border: 1px solid green;
+                    padding: 7px 12px;
 
                     border-radius: 10px;
                 }
@@ -40,7 +42,7 @@
         }
           @media screen and (min-width:768px)  {
         border: 0;
-        padding: 42px 0;
+        // padding: 10px 0;
     }
     display: flex;
     justify-content: space-between;
@@ -57,7 +59,7 @@
         padding: 0 15px;
 
         .activePage {
-            a {
+            span {
                 color: white;
             }
 

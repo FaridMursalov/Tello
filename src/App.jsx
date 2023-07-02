@@ -4,9 +4,11 @@ import Home from "./assets/pages/Home";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import Products from "./assets/pages/Products";
-import ProductDetails from "./assets/pages/ProductDetails";
+import ProductsDetails from "./assets/pages/ProductsDetails";
 import { useState } from "react";
-// import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import Login from "./assets/pages/Login";
+import Basket from "./assets/pages/Basket";
 // import breadCrumbsI from './assets/icons/breadCRumbs.svg'
 function App() {
   // const { pathname, key } = useLocation();
@@ -16,21 +18,15 @@ function App() {
   return (
     <>
       <Header />
-      {/* <div className="breadCrumbs">
-        
-        {pathname.split("/").map((p) => {
-          return (
-            <Link key={key} to={`/${p}`}>
-              {`${pathname === "/" ? "Ana səhifə" : p}`}
-            </Link>
-          );
-        })}
-      </div> */}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products/>}  />
-        <Route path="/Product-details" element={<ProductDetails/>}/>
+        <Route path="/Product-details/:id" element={<ProductsDetails/>}/>
         <Route path="/products/:id/:page" element={<Products/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Sign-up" element={<Login/>} />
+        <Route path="/basket" element={<Basket/>}/>
       </Routes>
 
       <Footer />

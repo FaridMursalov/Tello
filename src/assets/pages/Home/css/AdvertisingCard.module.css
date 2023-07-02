@@ -1,0 +1,73 @@
+.Card {
+  border-radius: 8px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 25px 5px;
+}
+@media screen and (min-width: 768px) {
+  .Card {
+    width: 45%;
+  }
+}
+
+.Info {
+  background-size: cover;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Img {
+  width: 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media screen and (min-width: 768px) {
+  .Img {
+    width: 40%;
+  }
+}
+
+.Content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.CardTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button {
+  width: 1%;
+}
+
+.CardText {
+  color: gray;
+  font-size: 14px;
+  padding: 0;
+  text-align: start;
+  font-weight: normal;
+}

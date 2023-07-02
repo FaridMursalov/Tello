@@ -14,7 +14,7 @@ import Card from "../../imgs/card-pos.svg";
 import Box from "../../imgs/boww.svg";
 import Medal from "../../imgs/medal-star.svg";
 import MarkaSlider from "./MarkaSlider";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 // import { useSelector, useDispatch } from "react-redux";
 // import { fetchProductsAsync } from "../../../Redux/actions/productAction";
 // import { fetchCategoriesAsync } from "../../../Redux/actions/fetchCategoriesAsync";
@@ -22,47 +22,29 @@ import { getCategories } from "../../../api/product";
 import axios from "../../../api/index";
 
 const Home = () => {
- 
- 
 
-  // const products = useSelector((state) => {
-  //   return state.productsReducer.products.slice(0, 4);
-  // });
 
-  // const { categories, loading, error } = useSelector((state) => {
-  //   return state.categoriesReducer;
-  // });
-  // const categoryList = categories.slice(0, 4);
-  // console.log(categoryList);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    // dispatch(fetchProductsAsync());
-
-    // dispatch(fetchCategoriesAsync("aksessuar"));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  // console.log("products", products);
-
-  // if (loading) return <h2>Loading....</h2>;
-  // if (error) return <h2>{error}</h2>;
-
+  
+  
   return (
     <div className="home">
       <Slider />
 
-      <CardSlider title={"Ən çox satılan məhsullar"}  category = "apple" />
-      <CardSlider category= "elektroniks"
+      <CardSlider title={"Ən çox satılan məhsullar"} category="apple" />
+      <CardSlider
+        category="yeni"
         title={"Yeni Gələn məhsullar"}
         img={Mob2}
-        
       />
       <div className={styles.advertisings}>
         <AdvertisingCard />
         <AdvertisingCard backgroundColor={"#E5E5E5"} />
       </div>
-      <CardSlider title={"Yeni gələn aksessuarlar"} img={Aks}  category = "aksessuar"  />
+      <CardSlider
+        title={"Yeni gələn aksessuarlar"}
+        img={Aks}
+        category="aksessuar"
+      />
       <div className={styles.ProductsNumber}>
         <ProductsNumber
           product={"Telefon"}

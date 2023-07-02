@@ -1,0 +1,33 @@
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  width: 50%;
+  font-size: 16px;
+  background: #FFFFFF;
+  /* Gray 5 */
+  border: 0px;
+  outline: 0;
+}
+
+.price {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 5px;
+  width: 130px;
+  background: #FFFFFF;
+  /* Gray 5 */
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
