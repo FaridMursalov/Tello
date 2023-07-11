@@ -1,7 +1,7 @@
 import styles from "./filtersDesk.module.scss";
 import Sort from "../Sort";
 
-const FiltersDesktop = () => {
+const FiltersDesktop = ({setCheckedProduct, checkedProduct,query,setQuery}) => {
 //   const [activeFilter, setActiveFilter] = useState(false);
 
   return (
@@ -11,9 +11,9 @@ const FiltersDesktop = () => {
         <ul className={styles.sortBar}>
           <li>
             {" "}
-            <Sort title={"Brend"} />
+            <Sort query={query} title={"Brend"} setQuery={setQuery} setCheckedProduct={setCheckedProduct} checkedProduct={checkedProduct} />
           </li>
-          <li>
+          {/* <li>
             <Sort title={"Type"} />
           </li>
           <li>
@@ -22,9 +22,9 @@ const FiltersDesktop = () => {
           <li>
             <Sort title={"Rəng"} />
           </li>
-          <li>
-            <Sort title={"Qiymət"} price />
-          </li>
+          <li> */}
+            {/* <Sort title={"Qiymət"} price />
+          </li> */}
          
         </ul>
       </div>

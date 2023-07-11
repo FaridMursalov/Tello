@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./sign.module.scss";
-const SignButton = ({ title,background,color,border,icon, onClickFunction, width, margin }) => {
+import ClipLoader from "react-spinners/ClipLoader"; 
+
+
+const SignButton = ({ title,background,color,border,icon, onClickFunction, width, margin, loading }) => {
   return (
     <button
       className={styles.button}
@@ -9,7 +12,7 @@ const SignButton = ({ title,background,color,border,icon, onClickFunction, width
       style={{ background: background, color: color, border: border, width: width, margin: margin }}
     >
     
-       {icon?(<img src={icon} alt="" />):""} {title}
+       { !loading&& icon?(<img src={icon} alt="" />):""} {loading? (<ClipLoader color="white" cssOverride={{width:"20px",height: "20px"}} />):title}
     </button>
   );
 };

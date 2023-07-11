@@ -21,10 +21,15 @@ const Login = () => {
   // if(id=== in){
 
   // }
+const customer_id = localStorage.getItem("CustomerId")
+
+
+
   const getLookPassword = () => {
     setLookPassword(!LookPassword);
   };
   return (
+    
     <div className={styles.loginContainer}>
       <div className={styles.container}>
         <div className={styles.Login}>

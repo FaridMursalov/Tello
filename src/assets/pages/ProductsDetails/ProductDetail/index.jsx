@@ -4,11 +4,19 @@ import React, { useState } from "react";
 import Sebet from "../../../icons/detailBasket.svg";
 import ColorBox from "../../../../components/ColorBox";
 import MemoryBox from "../../../../components/GbBox";
+import axios from "../../../../api/index";
 import CountButton from "../../../../components/CountButton";
-import { useSelector, useDispatch } from "react-redux";
-import { incrementByAmount } from "../../../../Redux/reducers/counterSlice";
 
+import { useSelector, useDispatch } from "react-redux";
+import { addBasketThunk } from "../../../../Redux/actions/CreateCart";
+import { useEffect } from "react";
 const ProductDetail = ({
+  variantGroups1,
+  variantGroups2,
+  colorBasketOptions,
+  sizeBasketOptions,
+
+  id,
   productAssets,
   setProductAssets,
   setDetailIndex,
@@ -17,14 +25,16 @@ const ProductDetail = ({
   setPriceIndex,
   PriceIndex,
 }) => {
-  const { value } = useSelector((state) => state.counterReducer);
+  const { loading } = useSelector((state) => state.cartReducers);
   const [counter, setCounter] = useState(1);
   const dispatch = useDispatch();
+  const cartID = localStorage.getItem("cartId");
+  console.log(cartID, "LOCAL ID");
 
   const Memory = productAssets?.variant_groups?.[1]?.options?.map(
     (memo, index) => memo?.name
   );
-
+  console.log(variantGroups1, "PPPPPPPPP");
   const CountIncrement = () => {
     if (
       counter < productAssets?.inventory?.available ||
@@ -38,13 +48,26 @@ const ProductDetail = ({
       setCounter(counter - 1);
     }
   };
-  const handleBox = () => {
-    dispatch(incrementByAmount(counter));
+  // const addToBasket = () => {
+
+  // };
+
+  const addToBasket = async () => {
+    console.log(variantGroups1, colorBasketOptions);
+    const data = {
+      id: id,
+      quantity: counter,
+    };
+    dispatch(addBasketThunk(data));
   };
 
   return (
     <div>
-      <div className={styles.productName}>{productAssets.name}</div>
+      <div className={styles.productName}>
+        {productAssets.name}{" "}
+        {productAssets?.variant_groups?.[1]?.options?.[PriceIndex].name} (
+        {productAssets?.variant_groups?.[0]?.options?.[detailIndex]?.name}){" "}
+      </div>
       <div className={styles.priceContainer}>
         <span className={styles.DefaultPrice}>
           {productPricee
@@ -54,7 +77,8 @@ const ProductDetail = ({
         </span>
         <span className={styles.basket}>
           <SignButton
-            onClickFunction={handleBox}
+            loading={loading}
+            onClickFunction={addToBasket}
             background={"#2DD06E"}
             border={"white"}
             title={"Səbətə at"}

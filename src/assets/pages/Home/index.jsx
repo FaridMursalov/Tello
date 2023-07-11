@@ -14,7 +14,9 @@ import Card from "../../imgs/card-pos.svg";
 import Box from "../../imgs/boww.svg";
 import Medal from "../../imgs/medal-star.svg";
 import MarkaSlider from "./MarkaSlider";
+import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
+import { createCartRedux } from "../../../Redux/actions/CreateCart";
 // import { useSelector, useDispatch } from "react-redux";
 // import { fetchProductsAsync } from "../../../Redux/actions/productAction";
 // import { fetchCategoriesAsync } from "../../../Redux/actions/fetchCategoriesAsync";
@@ -22,10 +24,17 @@ import { getCategories } from "../../../api/product";
 import axios from "../../../api/index";
 
 const Home = () => {
+  const dispatch = useDispatch()
+const cartID = localStorage.getItem("cartId")
 
-
-  
-  
+  useEffect(() => {
+    if (!cartID) {
+      console.log(cartID, "LOCAL ID");
+      dispatch(createCartRedux());
+    } else {
+      const parsedCartID = JSON.parse(cartID);
+    }
+  }, []);
   return (
     <div className="home">
       <Slider />

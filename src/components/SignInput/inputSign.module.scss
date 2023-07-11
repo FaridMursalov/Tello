@@ -6,6 +6,21 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.valid{
+    cursor: pointer;
+    border: 1px solid red;
+    &:hover{
+        border: 1px solid #828282;
+    }
+    display: flex;
+    align-items: center;
+background-color: #F2F2F2;
+    border-radius: 8px;
+    // padding: 0 20px;
+height: 50px;
+
+}
 .SignInput{
     cursor: pointer;
     border: 1px solid #F2F2F2;
@@ -20,6 +35,9 @@ background-color: #F2F2F2;
 height: 50px;
 }
 .label{color: #4F4F4F;}
+.vali{
+    color: red;
+}
 .input{
     cursor: pointer;
     font-size: 16px;
@@ -32,6 +50,7 @@ height: 50px;
     outline: 0;
 border: 0;
 }
+
 .inputIcon{padding: 0 20px;
     padding-left: 0;
     display: flex;

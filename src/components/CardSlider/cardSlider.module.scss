@@ -1,4 +1,7 @@
 .cardSlider {
+  @media screen and (min-width:768px) {
+    padding-top: 50px;
+  }
   padding-top: 50px;
   display: flex;
   flex-direction: column;

@@ -1,7 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from './reducers/counterSlice'
+import cartReducers from './reducers/cartReducers'
+import loginReducer from './reducers/loginReducer'
 export const store = configureStore({
   reducer: {
-    counterReducer,
+    cartReducers,
+    loginReducer
   },
 })

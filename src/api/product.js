@@ -7,25 +7,25 @@ export const getCategories = async (categories, limit) => {
     `/products?${categories && "category_slug=" + categories}&limit=${limit}`
   );
 };
-export const getCategoriesDetail = async (category) => {
+export const getCategoriesDetail = async (category ) => {
   return axios.get(`https://api.chec.io/v1/categories/${category}?type=slug`);
 };
 
-export const getProductsList = (slug, page, limit,sortBy,sortDirection) =>
+export const getProductsList = (query= null, slug = null , page = 1, limit= 3,sortBy= null,sortDirection = null) =>
   axios.get(
-    `https://api.chec.io/v1/products?category_slug=${slug}&page=${page}&limit=${limit}&sortBy=${sortBy}&sortDirection=${sortDirection}`
+    `/products? ${query && `query= ${query}`} & ${slug && ` category_slug=${slug}`}&page=${page}&limit=${limit}&sortBy=${sortBy}&sortDirection=${sortDirection}`
   );
 
 
 
   export const getProductVariant = (id) =>
   axios.get(
-    `https://api.chec.io/v1/products/${id}`
+    `/products/${id}`
   );
 
   export const getFindProduct = (product) =>
   axios.get(
-    `https://api.chec.io/v1/products?query=${product}`
+    `/products?query=${product}`
   );
 
 

@@ -38,6 +38,11 @@ a{
 }
    
 }
+.breadCrumb{ 
+    @media screen and (max-width: 768px){display: none;    
+}
+    padding: 20px 150px;
+}
 .d {
     width: 90%;
     display: flex;

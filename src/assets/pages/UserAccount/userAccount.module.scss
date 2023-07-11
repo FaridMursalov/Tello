@@ -1,0 +1,88 @@
+.UserForm{
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        // width: 85%;
+        margin: auto;    
+          
+        
+    }
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.inputs{
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;;
+        flex-direction:row ;
+        margin: auto;
+        width: 560px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.userFormContainer{
+    @media screen and (min-width:768px) {
+      width: 650px;
+      
+        
+    }
+    padding: 30px 0;
+    background-color: white;
+}
+.userAccount{
+    @media screen and (min-width:768px) {
+        flex-direction:row ;
+        justify-content: space-evenly;
+       
+        
+    }
+
+    h3,h2{
+        color: #4f4f4f;
+        width: 85%;
+        margin: auto;
+    }
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-color: #FAF9F9;
+}
+
+@media screen and (min-width: 768px) {
+    .userLi{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+    }
+    .userNav{
+        justify-content: center;
+        padding: 0 25px;
+        width: 20%;
+        // align-items: center;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 8px;
+        background-color: white;
+        h3{
+            margin: unset;
+            width: auto;
+            padding:0 5px;
+        }
+        
+        a{ &:hover{
+            color: #2DD06E;
+        }
+            color: black;
+        }
+    }
+    
+}
