@@ -20,7 +20,6 @@ window.addEventListener('click', (e) => {
 })
 
 
-console.log(useReff, "ref");
   useEffect(() => {
     const getFindProducts = async () => {
       try {
@@ -37,9 +36,7 @@ console.log(useReff, "ref");
 
     getFindProducts();
   }, [findProducts]);
-  console.log("dedefedfef", searchProduct);
 
-  console.log(findProducts);
   return (
     <div  ref={useReff} className={styles.c}>
       <form className={styles.searchForm}>

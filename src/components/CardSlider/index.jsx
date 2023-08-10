@@ -13,7 +13,6 @@ const CardSlider = ({ title, category }) => {
   const [listCategory, setCategory] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  console.log(useParams());
   useEffect(() => {
     const getData = async () => {
       try {
@@ -43,7 +42,7 @@ const CardSlider = ({ title, category }) => {
           <CatalogMagic/>
           <CatalogMagic/>
         </div>) :  listCategory?.map((product) => (
-          <Link to={`/Product-details/${product.id}`}>
+          <Link key={product.id} to={`/Product-details/${product.id}`}>
             <Card key={product.id} product={product} />
           </Link>
         ))}
